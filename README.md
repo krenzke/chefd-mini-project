@@ -10,7 +10,7 @@
 
 ### Parsing
 
-    Most of the parsing of the raw API response is done for us by the `twitter` gem. It takes care of getting the tweet text, user id, hashtags, etc. and making convenient accessor methods to get them. The main job of the parsing threads here is to transform the tweet into a format suitable for insertion into our particular database schema. To this end, it takes each records and packs the relevent tweet, user, and hashtag info into an object which is pushed onto a queue for later use by the storage mechanism.
+  Most of the parsing of the raw API response is done for us by the `twitter` gem. It takes care of getting the tweet text, user id, hashtags, etc. and making convenient accessor methods to get them. The main job of the parsing threads here is to transform the tweet into a format suitable for insertion into our particular database schema. To this end, it takes each records and packs the relevent tweet, user, and hashtag info into an object which is pushed onto a queue for later use by the storage mechanism.
 
 ### Storage
 
